@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.app{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.pads{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.pads1{
+    background: chartreuse;
+    width: 100%;
+    height: 40px;
+}
+.pads2{
+    background: rgb(251, 255, 0);
+    width: 100%;
+    height: 40px;
+}
+.pads3{
+    background: rgb(0, 217, 255);
+    width: 100%;
+    height: 40px;
+}
+.pads4{
+    background: rgb(255, 0, 242);
+    width: 100%;
+    height: 40px;
+}
+.pads5{
+    background: rgb(255, 51, 0);
+    width: 100%;
+    height: 40px;
+}
+.vidual > div{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0%;
+    left: 20%;
+    z-index: -1;
+}
+@keyframes buble{
+    0%{
+        bottom: 0%;
+        left: 20%;
+    }
+    50%{
+        bottom: 50%;
+    left: 50%;
+    }
+    100%{
+        bottom: 0%;
+    left: 80%;
+    }
+}
